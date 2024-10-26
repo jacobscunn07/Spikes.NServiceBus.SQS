@@ -1,0 +1,96 @@
+﻿2024-10-22 19:58:29.269 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Consumer/bin/Debug/net8.0/' with level Info
+2024-10-22 19:58:29.312 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-22 19:58:29.355 INFO  Creating SQS Queue with name 'Spikes-NServiceBus-SQS-Consumer' for address 'Spikes-NServiceBus-SQS-Consumer'.
+2024-10-22 19:58:35.944 INFO  Creating SQS Queue with name 'error' for address 'error'.
+2024-10-22 20:00:27.345 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Consumer/bin/Debug/net8.0/' with level Info
+2024-10-22 20:00:27.419 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-22 20:00:27.528 INFO  Creating SQS Queue with name 'Spikes-NServiceBus-SQS-Consumer' for address 'Spikes-NServiceBus-SQS-Consumer'.
+2024-10-22 20:00:27.789 INFO  Creating SQS Queue with name 'error' for address 'error'.
+2024-10-22 20:00:29.848 INFO  Creating SQS delayed delivery queue with name 'Spikes-NServiceBus-SQS-Consumer-delay.fifo' for address 'Spikes-NServiceBus-SQS-Consumer'.
+2024-10-22 20:00:31.041 WARN  Conflict when creating S3 bucket, retrying after 2000ms.
+2024-10-22 20:04:23.333 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Consumer/bin/Debug/net8.0/' with level Info
+2024-10-22 20:04:23.424 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-22 20:04:23.620 INFO  Creating SQS Queue with name 'Spikes-NServiceBus-SQS-Consumer' for address 'Spikes-NServiceBus-SQS-Consumer'.
+2024-10-22 20:04:23.853 INFO  Creating SQS Queue with name 'error' for address 'error'.
+2024-10-22 20:04:25.421 INFO  Creating SQS delayed delivery queue with name 'Spikes-NServiceBus-SQS-Consumer-delay.fifo' for address 'Spikes-NServiceBus-SQS-Consumer'.
+2024-10-22 20:05:16.903 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Consumer/bin/Debug/net8.0/' with level Info
+2024-10-22 20:05:17.142 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-22 20:05:17.242 INFO  Creating SQS Queue with name 'Spikes-NServiceBus-SQS-Consumer' for address 'Spikes-NServiceBus-SQS-Consumer'.
+2024-10-22 20:05:18.525 INFO  Creating SQS Queue with name 'error' for address 'error'.
+2024-10-22 20:05:19.995 INFO  Creating SQS delayed delivery queue with name 'Spikes-NServiceBus-SQS-Consumer-delay.fifo' for address 'Spikes-NServiceBus-SQS-Consumer'.
+2024-10-22 20:05:30.809 INFO  Received MyCommand with a payload of 0 bytes.
+2024-10-22 20:05:44.986 INFO  Received MyCommand with a payload of 263168 bytes.
+2024-10-22 20:05:45.065 INFO  Message body data with key 'my/key/prefix/441d3a91-a54b-48b3-96ca-b21200120d03' will be aged out by the S3 lifecycle policy when the TTL expires.
+2024-10-22 20:07:41.808 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Consumer/bin/Debug/net8.0/' with level Info
+2024-10-22 20:07:41.893 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-22 20:07:41.990 INFO  Creating SQS Queue with name 'Spikes-NServiceBus-SQS-Consumer' for address 'Spikes-NServiceBus-SQS-Consumer'.
+2024-10-22 20:07:42.124 INFO  Creating SQS Queue with name 'error' for address 'error'.
+2024-10-22 20:07:43.365 INFO  Creating SQS delayed delivery queue with name 'Spikes-NServiceBus-SQS-Consumer-delay.fifo' for address 'Spikes-NServiceBus-SQS-Consumer'.
+2024-10-22 20:08:16.864 INFO  Received MyEvent with a payload of 0 bytes.
+2024-10-22 20:33:32.115 ERROR Exception thrown when consuming delayed messages
+Amazon.SQS.AmazonSQSException: Signature expired: 20241023T011007Z is now earlier than 20241023T011831Z (20241023T013331Z - 15 min.)
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.ProcessHttpResponseMessage(HttpResponseMessage responseMessage)
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ValidationResponseHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at NServiceBus.Transport.SQS.DelayedMessagesPump.ConsumeDelayedMessages(ReceiveMessageRequest request, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SQS/DelayedMessagesPump.cs:line 144
+   at NServiceBus.Transport.SQS.DelayedMessagesPump.ConsumeDelayedMessagesAndSwallowExceptions(ReceiveMessageRequest request, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SQS/DelayedMessagesPump.cs:line 127
+2024-10-22 20:33:42.857 ERROR Exception thrown when consuming messages
+Amazon.SQS.AmazonSQSException: Signature expired: 20241023T011018Z is now earlier than 20241023T011842Z (20241023T013342Z - 15 min.)
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.ProcessHttpResponseMessage(HttpResponseMessage responseMessage)
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ValidationResponseHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at NServiceBus.Transport.SQS.InputQueuePump.PumpMessagesAndSwallowExceptions(CancellationToken messagePumpCancellationToken) in /_/src/NServiceBus.Transport.SQS/InputQueuePump.cs:line 199
+2024-10-22 21:25:37.919 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Consumer/bin/Debug/net8.0/' with level Info
+2024-10-22 21:25:38.006 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-22 21:25:38.243 INFO  Creating SQS Queue with name 'Spikes-NServiceBus-SQS-Consumer' for address 'Spikes-NServiceBus-SQS-Consumer'.
+2024-10-22 21:25:38.459 INFO  Creating SQS Queue with name 'error' for address 'error'.
+2024-10-22 21:25:39.936 INFO  Creating SQS delayed delivery queue with name 'Spikes-NServiceBus-SQS-Consumer-delay.fifo' for address 'Spikes-NServiceBus-SQS-Consumer'.
+2024-10-22 21:25:51.728 INFO  Received MyEvent with a payload of 0 bytes.
+2024-10-22 21:25:53.035 INFO  Received MyEvent with a payload of 0 bytes.
+2024-10-22 21:25:53.325 INFO  Received MyEvent with a payload of 0 bytes.
+2024-10-22 21:25:53.553 INFO  Received MyEvent with a payload of 0 bytes.
+2024-10-22 21:25:53.741 INFO  Received MyEvent with a payload of 0 bytes.
+2024-10-22 21:26:06.227 INFO  Received MyEvent with a payload of 263168 bytes.
+2024-10-22 21:26:06.281 INFO  Message body data with key 'my/key/prefix/811b006e-a553-4016-8d41-b21200281ddb' will be aged out by the S3 lifecycle policy when the TTL expires.

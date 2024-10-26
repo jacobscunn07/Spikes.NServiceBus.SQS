@@ -1,0 +1,12 @@
+/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Contracts/bin/Debug/net8.0/Spikes.NServiceBus.SQS.Contracts.deps.json
+/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Contracts/bin/Debug/net8.0/Spikes.NServiceBus.SQS.Contracts.dll
+/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Contracts/bin/Debug/net8.0/Spikes.NServiceBus.SQS.Contracts.pdb
+/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Contracts/obj/Debug/net8.0/Spikes.NServiceBus.SQS.Contracts.csproj.AssemblyReference.cache
+/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Contracts/obj/Debug/net8.0/Spikes.NServiceBus.SQS.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Contracts/obj/Debug/net8.0/Spikes.NServiceBus.SQS.Contracts.AssemblyInfoInputs.cache
+/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Contracts/obj/Debug/net8.0/Spikes.NServiceBus.SQS.Contracts.AssemblyInfo.cs
+/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Contracts/obj/Debug/net8.0/Spikes.NServiceBus.SQS.Contracts.csproj.CoreCompileInputs.cache
+/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Contracts/obj/Debug/net8.0/Spikes.NServiceBus.SQS.Contracts.dll
+/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Contracts/obj/Debug/net8.0/refint/Spikes.NServiceBus.SQS.Contracts.dll
+/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Contracts/obj/Debug/net8.0/Spikes.NServiceBus.SQS.Contracts.pdb
+/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Contracts/obj/Debug/net8.0/ref/Spikes.NServiceBus.SQS.Contracts.dll

@@ -1,0 +1,166 @@
+﻿2024-10-22 19:58:31.013 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Publisher/bin/Debug/net8.0/' with level Info
+2024-10-22 19:58:31.076 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-22 19:58:31.121 INFO  Creating SQS Queue with name 'Spikes-NServiceBus-SQS-Publisher' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-22 19:58:31.162 INFO  Creating SQS Queue with name 'error' for address 'error'.
+2024-10-22 20:00:28.715 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Publisher/bin/Debug/net8.0/' with level Info
+2024-10-22 20:00:28.821 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-22 20:00:28.890 INFO  Creating SQS Queue with name 'Spikes-NServiceBus-SQS-Publisher' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-22 20:00:29.034 INFO  Creating SQS Queue with name 'error' for address 'error'.
+2024-10-22 20:00:30.584 INFO  Creating SQS delayed delivery queue with name 'Spikes-NServiceBus-SQS-Publisher-delay.fifo' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-22 20:04:26.056 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Publisher/bin/Debug/net8.0/' with level Info
+2024-10-22 20:04:26.127 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-22 20:04:26.190 INFO  Creating SQS Queue with name 'Spikes-NServiceBus-SQS-Publisher' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-22 20:04:26.286 INFO  Creating SQS Queue with name 'error' for address 'error'.
+2024-10-22 20:04:27.898 INFO  Creating SQS delayed delivery queue with name 'Spikes-NServiceBus-SQS-Publisher-delay.fifo' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-22 20:04:39.326 ERROR Exception from Send.
+Amazon.SQS.Model.QueueDoesNotExistException: Queue `Samples-Sqs-SimpleReceiver` doesn't exist
+ ---> Amazon.SQS.Model.QueueDoesNotExistException: The specified queue does not exist.
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.ProcessHttpResponseMessage(HttpResponseMessage responseMessage)
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ValidationResponseHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at NServiceBus.Transport.SQS.QueueCache.<>c.<<GetQueueUrl>b__4_0>d.MoveNext() in /_/src/NServiceBus.Transport.SQS/QueueCache.cs:line 38
+--- End of stack trace from previous location ---
+   at NServiceBus.Transport.SQS.QueueCache.GetQueueUrl(String queueName, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SQS/QueueCache.cs:line 34
+   at NServiceBus.Transport.SQS.MessageDispatcher.ApplyUnicastOperationMapping(UnicastTransportOperation transportOperation, SqsPreparedMessage sqsPreparedMessage, Int64 delaySeconds, Dictionary`2 nativeMessageAttributes, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SQS/MessageDispatcher.cs:line 541
+   --- End of inner exception stack trace ---
+   at NServiceBus.Transport.SQS.MessageDispatcher.ApplyUnicastOperationMapping(UnicastTransportOperation transportOperation, SqsPreparedMessage sqsPreparedMessage, Int64 delaySeconds, Dictionary`2 nativeMessageAttributes, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SQS/MessageDispatcher.cs:line 546
+   at NServiceBus.Transport.SQS.MessageDispatcher.PrepareMessage(UnicastTransportOperation transportOperation, Dictionary`2 multicastEventsMessageIdsToType, TransportTransaction transportTransaction, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SQS/MessageDispatcher.cs:line 362
+   at NServiceBus.Transport.SQS.MessageDispatcher.DispatchBatched(IEnumerable`1 toBeBatchedTransportOperations, Dictionary`2 multicastEventsMessageIdsToType, TransportTransaction transportTransaction, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SQS/MessageDispatcher.cs:line 154
+   at NServiceBus.Transport.SQS.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SQS/MessageDispatcher.cs:line 89
+2024-10-22 20:05:20.557 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Publisher/bin/Debug/net8.0/' with level Info
+2024-10-22 20:05:20.652 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-22 20:05:20.723 INFO  Creating SQS Queue with name 'Spikes-NServiceBus-SQS-Publisher' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-22 20:05:20.835 INFO  Creating SQS Queue with name 'error' for address 'error'.
+2024-10-22 20:05:22.087 INFO  Creating SQS delayed delivery queue with name 'Spikes-NServiceBus-SQS-Publisher-delay.fifo' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-22 20:07:43.651 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Publisher/bin/Debug/net8.0/' with level Info
+2024-10-22 20:07:43.731 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-22 20:07:43.802 INFO  Creating SQS Queue with name 'Spikes-NServiceBus-SQS-Publisher' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-22 20:07:43.883 INFO  Creating SQS Queue with name 'error' for address 'error'.
+2024-10-22 20:07:45.325 INFO  Creating SQS delayed delivery queue with name 'Spikes-NServiceBus-SQS-Publisher-delay.fifo' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-22 20:33:33.043 ERROR Exception thrown when consuming delayed messages
+Amazon.SQS.AmazonSQSException: Signature expired: 20241023T011008Z is now earlier than 20241023T011832Z (20241023T013332Z - 15 min.)
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.ProcessHttpResponseMessage(HttpResponseMessage responseMessage)
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ValidationResponseHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at NServiceBus.Transport.SQS.DelayedMessagesPump.ConsumeDelayedMessages(ReceiveMessageRequest request, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SQS/DelayedMessagesPump.cs:line 144
+   at NServiceBus.Transport.SQS.DelayedMessagesPump.ConsumeDelayedMessagesAndSwallowExceptions(ReceiveMessageRequest request, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SQS/DelayedMessagesPump.cs:line 127
+2024-10-22 20:33:33.043 ERROR Exception thrown when consuming messages
+Amazon.SQS.AmazonSQSException: Signature expired: 20241023T011007Z is now earlier than 20241023T011832Z (20241023T013332Z - 15 min.)
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.ProcessHttpResponseMessage(HttpResponseMessage responseMessage)
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ValidationResponseHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at NServiceBus.Transport.SQS.InputQueuePump.PumpMessagesAndSwallowExceptions(CancellationToken messagePumpCancellationToken) in /_/src/NServiceBus.Transport.SQS/InputQueuePump.cs:line 199
+2024-10-22 21:25:39.761 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Publisher/bin/Debug/net8.0/' with level Info
+2024-10-22 21:25:39.841 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-22 21:25:39.910 INFO  Creating SQS Queue with name 'Spikes-NServiceBus-SQS-Publisher' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-22 21:25:39.994 INFO  Creating SQS Queue with name 'error' for address 'error'.
+2024-10-22 21:25:41.783 INFO  Creating SQS delayed delivery queue with name 'Spikes-NServiceBus-SQS-Publisher-delay.fifo' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-22 21:27:23.867 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Publisher/bin/Debug/net8.0/' with level Info
+2024-10-22 21:27:23.955 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-22 21:27:24.017 INFO  Creating SQS Queue with name 'Spikes-NServiceBus-SQS-Publisher' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-22 21:27:24.279 INFO  Creating SQS Queue with name 'error' for address 'error'.
+2024-10-22 21:27:25.437 INFO  Creating SQS delayed delivery queue with name 'Spikes-NServiceBus-SQS-Publisher-delay.fifo' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-22 21:28:59.685 ERROR Exception from Send.
+Amazon.SQS.Model.QueueDoesNotExistException: Queue `Spikes-NServiceBus-SQS-Consumer1` doesn't exist
+ ---> Amazon.SQS.Model.QueueDoesNotExistException: The specified queue does not exist.
+ ---> Amazon.Runtime.Internal.HttpErrorResponseException: Exception of type 'Amazon.Runtime.Internal.HttpErrorResponseException' was thrown.
+   at Amazon.Runtime.HttpWebRequestMessage.ProcessHttpResponseMessage(HttpResponseMessage responseMessage)
+   at Amazon.Runtime.HttpWebRequestMessage.GetResponseAsync(CancellationToken cancellationToken)
+   at Amazon.Runtime.Internal.HttpHandler`1.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Unmarshaller.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.SQS.Internal.ValidationResponseHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   --- End of inner exception stack trace ---
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionStream(IRequestContext requestContext, IWebResponseData httpErrorResponse, HttpErrorResponseException exception, Stream responseStream)
+   at Amazon.Runtime.Internal.HttpErrorResponseExceptionHandler.HandleExceptionAsync(IExecutionContext executionContext, HttpErrorResponseException exception)
+   at Amazon.Runtime.Internal.ExceptionHandler`1.HandleAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.ProcessExceptionAsync(IExecutionContext executionContext, Exception exception)
+   at Amazon.Runtime.Internal.ErrorHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.Signer.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.EndpointDiscoveryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at NServiceBus.Transport.SQS.QueueCache.<>c.<<GetQueueUrl>b__4_0>d.MoveNext() in /_/src/NServiceBus.Transport.SQS/QueueCache.cs:line 38
+--- End of stack trace from previous location ---
+   at NServiceBus.Transport.SQS.QueueCache.GetQueueUrl(String queueName, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SQS/QueueCache.cs:line 34
+   at NServiceBus.Transport.SQS.MessageDispatcher.ApplyUnicastOperationMapping(UnicastTransportOperation transportOperation, SqsPreparedMessage sqsPreparedMessage, Int64 delaySeconds, Dictionary`2 nativeMessageAttributes, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SQS/MessageDispatcher.cs:line 541
+   --- End of inner exception stack trace ---
+   at NServiceBus.Transport.SQS.MessageDispatcher.ApplyUnicastOperationMapping(UnicastTransportOperation transportOperation, SqsPreparedMessage sqsPreparedMessage, Int64 delaySeconds, Dictionary`2 nativeMessageAttributes, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SQS/MessageDispatcher.cs:line 546
+   at NServiceBus.Transport.SQS.MessageDispatcher.PrepareMessage(UnicastTransportOperation transportOperation, Dictionary`2 multicastEventsMessageIdsToType, TransportTransaction transportTransaction, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SQS/MessageDispatcher.cs:line 362
+   at NServiceBus.Transport.SQS.MessageDispatcher.DispatchBatched(IEnumerable`1 toBeBatchedTransportOperations, Dictionary`2 multicastEventsMessageIdsToType, TransportTransaction transportTransaction, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SQS/MessageDispatcher.cs:line 154
+   at NServiceBus.Transport.SQS.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SQS/MessageDispatcher.cs:line 89
+2024-10-22 21:29:30.427 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Publisher/bin/Debug/net8.0/' with level Info
+2024-10-22 21:29:30.525 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-22 21:29:30.658 INFO  Creating SQS Queue with name 'Spikes-NServiceBus-SQS-Publisher' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-22 21:29:30.807 INFO  Creating SQS Queue with name 'error' for address 'error'.
+2024-10-22 21:29:32.532 INFO  Creating SQS delayed delivery queue with name 'Spikes-NServiceBus-SQS-Publisher-delay.fifo' for address 'Spikes-NServiceBus-SQS-Publisher'.

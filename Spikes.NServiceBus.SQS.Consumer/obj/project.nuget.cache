@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "+9iFjCle1h0=",
+  "success": true,
+  "projectFilePath": "/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Consumer/Spikes.NServiceBus.SQS.Consumer.csproj",
+  "expectedPackageFiles": [
+    "/Users/jacobcunningham/.nuget/packages/awssdk.core/3.7.400.36/awssdk.core.3.7.400.36.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/awssdk.s3/3.7.305.29/awssdk.s3.3.7.305.29.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/awssdk.simplenotificationservice/3.7.301.1/awssdk.simplenotificationservice.3.7.301.1.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/awssdk.sqs/3.7.300.53/awssdk.sqs.3.7.300.53.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/awssdk.sso/3.7.400.36/awssdk.sso.3.7.400.36.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/awssdk.ssooidc/3.7.400.36/awssdk.ssooidc.3.7.400.36.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/bitfaster.caching/2.4.1/bitfaster.caching.2.4.1.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/microsoft.extensions.configuration.binder/8.0.0/microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/microsoft.extensions.diagnostics/8.0.0/microsoft.extensions.diagnostics.8.0.0.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/microsoft.extensions.diagnostics.abstractions/8.0.0/microsoft.extensions.diagnostics.abstractions.8.0.0.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/microsoft.extensions.options.configurationextensions/8.0.0/microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/nservicebus/9.2.2/nservicebus.9.2.2.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/nservicebus.amazonsqs/7.0.1/nservicebus.amazonsqs.7.0.1.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/nservicebus.messageinterfaces/1.0.0/nservicebus.messageinterfaces.1.0.0.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/system.diagnostics.diagnosticsource/8.0.0/system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/system.formats.asn1/8.0.1/system.formats.asn1.8.0.1.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/system.security.cryptography.pkcs/8.0.0/system.security.cryptography.pkcs.8.0.0.nupkg.sha512",
+    "/Users/jacobcunningham/.nuget/packages/system.security.cryptography.xml/8.0.1/system.security.cryptography.xml.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

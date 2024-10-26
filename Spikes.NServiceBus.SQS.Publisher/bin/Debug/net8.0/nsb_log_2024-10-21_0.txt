@@ -1,0 +1,19 @@
+﻿2024-10-21 16:55:13.080 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Publisher/bin/Debug/net8.0/' with level Info
+2024-10-21 16:55:13.165 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-21 16:57:06.678 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Publisher/bin/Debug/net8.0/' with level Info
+2024-10-21 16:57:06.740 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-21 16:57:57.990 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Publisher/bin/Debug/net8.0/' with level Info
+2024-10-21 16:57:58.058 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-21 17:00:07.785 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Publisher/bin/Debug/net8.0/' with level Info
+2024-10-21 17:00:07.862 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-21 17:01:01.519 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Publisher/bin/Debug/net8.0/' with level Info
+2024-10-21 17:01:01.589 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-21 17:01:01.657 INFO  Creating SQS Queue with name 'Spikes-NServiceBus-SQS-Publisher' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-21 17:01:01.796 INFO  Creating SQS Queue with name 'error' for address 'error'.
+2024-10-21 17:01:03.539 INFO  Creating SQS delayed delivery queue with name 'Spikes-NServiceBus-SQS-Publisher-delay.fifo' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-21 17:02:06.675 INFO  Logging to '/Users/jacobcunningham/_CODE/Spikes.NServiceBus.SQS/Spikes.NServiceBus.SQS.Publisher/bin/Debug/net8.0/' with level Info
+2024-10-21 17:02:06.747 INFO  No valid license could be found. Falling back to trial license with start date '2024-10-21'.
+2024-10-21 17:02:06.816 INFO  Creating SQS Queue with name 'Spikes-NServiceBus-SQS-Publisher' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-21 17:02:06.876 INFO  Creating SQS Queue with name 'error' for address 'error'.
+2024-10-21 17:02:08.807 INFO  Creating SQS delayed delivery queue with name 'Spikes-NServiceBus-SQS-Publisher-delay.fifo' for address 'Spikes-NServiceBus-SQS-Publisher'.
+2024-10-21 17:02:12.481 WARN  Conflict when setting S3 lifecycle configuration, retrying after 2000ms.
